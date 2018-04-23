@@ -4,12 +4,15 @@ function getIt(){
 }
 
 function frameIt() {
-  $('img').on('load',function(e){(this.addClass("tasty")}));
+  $('img').on('load',function (e){
+    this.addClass("tasty")
+  });
 }
 
 $(document).ready(function(){
 
 // call functions here
   getIt();
+  frameIt();
 
 });
